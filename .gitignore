@@ -1,4 +1,7 @@
 .sass-cache
 config.codekit
 bower_components
-css
+
+README.html
+index.html
+main.css
