@@ -1,0 +1,29 @@
+@import '../bower_components/fizz-sass/scss/main';
+@import '../bower_components/taffy-break/scss/main';
+@import '../bower_components/taffy-grid/scss/main';
+
+$white: #fff;
+$color: rgba(0, 191, 191 - random(127), 0.375);
+
+body {
+  background-color: $color;
+}
+
+.grid + .grid {
+  margin-top: 1em;
+}
+
+.pill {
+  min-height: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  background-color: $white;
+}
+
+$list: ();
+@for $i from 1 through $break-amount {
+  $list: join($list, $i);
+  .item-#{$i} {
+    @include item($list);
+  }
+}

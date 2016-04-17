@@ -1,0 +1,19 @@
+mixin generate(n)
+  -i = 0
+  while i < n
+    .grid
+      -e = 0
+      while e < i
+        div(class='item-' + i)
+          .pill
+        -e++
+    -i++
+
+doctype
+html
+  head
+    title Taffy Demo
+    link(href='css/main.css' rel='stylesheet' type='text/css')
+
+  body
+    +generate(13)
