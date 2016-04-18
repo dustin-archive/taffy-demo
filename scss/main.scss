@@ -1,5 +1,6 @@
 @import '../bower_components/fizz-sass/scss/main';
 @import '../bower_components/taffy-break/scss/main';
+@import '../bower_components/taffy-adapt/scss/main';
 @import '../bower_components/taffy-grid/scss/main';
 
 $white: #fff;
@@ -22,8 +23,9 @@ body {
 
 $list: ();
 @for $i from 1 through $break-amount {
-  $list: join($list, $i);
-  .item-#{$i} {
+  $list: join($list, merge($i $i, '-'));
+
+  .taffy-item-#{$i} {
     @include item($list);
   }
 }
