@@ -8,18 +8,29 @@
 @import '../adapt/scss/main';
 @import '../grid/scss/main';
 
+$white: #fff;
+$color: rgba(0, 191, 191 - random(127), 0.375);
+
 body {
-  background: dodgerblue;
+  background-color: $color;
 }
 
-@for $i from 1 through $break-amount {
-  .item-#{$i} {
-    @include item(2 (6 4) (8 6));
-    // @include item(2 6-4 8-6);
-    // @debug merge(flatten('hey' '6:4' '8:6'), '-')
-  }
+.grid + .grid {
+  margin-top: 1em;
 }
 
 .pill {
-  background: #fff;
+  min-height: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  background-color: $white;
+}
+
+$list: ();
+@for $i from 1 through $break-amount {
+  $list: join($list, merge($i $i, '-'));
+
+  .taffy-item-#{$i} {
+    @include item($list);
+  }
 }
