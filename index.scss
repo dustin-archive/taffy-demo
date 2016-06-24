@@ -28,7 +28,7 @@ body {
 
 $list: ();
 @for $i from 1 through $break-amount {
-  $list: join($list, merge($i $i, '-'));
+  $list: join($list, ($i $i));
 
   .taffy-item-#{$i} {
     @include item($list);
