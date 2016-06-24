@@ -1,0 +1,25 @@
+// @import 'bower_components/fizz-sass/scss/main';
+// @import 'bower_components/taffy-break/scss/main';
+// @import 'bower_components/taffy-adapt/scss/main';
+// @import 'bower_components/taffy-grid/scss/main';
+
+@import 'bower_components/fizz-sass/scss/main';
+@import '../break/scss/main';
+@import '../adapt/scss/main';
+@import '../grid/scss/main';
+
+body {
+  background: dodgerblue;
+}
+
+@for $i from 1 through $break-amount {
+  .item-#{$i} {
+    @include item(2 (6 4) (8 6));
+    // @include item(2 6-4 8-6);
+    // @debug merge(flatten('hey' '6:4' '8:6'), '-')
+  }
+}
+
+.pill {
+  background: #fff;
+}
