@@ -22,6 +22,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "taffy-grid": "^2.0.0"
+    "taffy-grid": "3.0.1-alpha1",
+    "fizz-sass": "^2.0.0"
   }
 }
