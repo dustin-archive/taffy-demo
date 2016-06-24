@@ -1,6 +1,5 @@
-.sass-cache
-config.codekit
 bower_components
+node_modules
 
 README.html
 index.html
