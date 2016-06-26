@@ -3,6 +3,8 @@
 // @import 'bower_components/taffy-adapt/scss/main';
 // @import 'bower_components/taffy-grid/scss/main';
 
+$grid-fixed: true;
+
 @import 'bower_components/fizz-sass/scss/main';
 @import '../break/scss/main';
 @import '../adapt/scss/main';
@@ -26,11 +28,6 @@ body {
   background-color: $white;
 }
 
-$list: ();
-@for $i from 1 through $break-amount {
-  $list: join($list, ($i $i));
-
-  .taffy-item-#{$i} {
-    @include item($list);
-  }
+.taffy-item-12 {
+  @include item(1 (6 12))
 }
