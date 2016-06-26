@@ -1,12 +1,15 @@
-mixin generate(n)
+mixin generate-items(n)
   -i = 0
   while i < n
+    div(class='taffy-item-' + n)
+      .pill
+    -i++
+
+mixin generate-grids(n)
+  -i = 0
+  while i <= n
     .grid
-      -e = 0
-      while e < i
-        div(class='taffy-item-' + i)
-          .pill
-        -e++
+      +generate-items(i)
     -i++
 
 doctype
@@ -14,6 +17,7 @@ html
   head
     title Taffy Demo
     link(href='index.css' rel='stylesheet' type='text/css')
+    meta(name='viewport' content='width=device-width initial-scale=1 user-scalable=no')
 
   body
-    +generate(13)
+    +generate-grids(12)
