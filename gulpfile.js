@@ -1,12 +1,12 @@
 'use strict'
 
 var gulp = require('gulp')
-var sass = require('gulp-sass')
+var sass = require('gulp-ruby-sass')
 var jade = require('gulp-jade')
 
-gulp.task('scss', function () {
-  gulp.src('index.scss')
-    .pipe(sass().on('error', sass.logError))
+gulp.task('sass', function () {
+  sass('index.scss')
+    .on('error', sass.logError)
     .pipe(gulp.dest(''))
 })
 
@@ -17,6 +17,6 @@ gulp.task('jade', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('index.scss', ['scss'])
+  gulp.watch('index.scss', ['sass'])
   gulp.watch('index.jade', ['jade'])
 })
