@@ -1,9 +1,9 @@
+$grid-fixed: true;
+
 // @import 'bower_components/fizz-sass/scss/main';
 // @import 'bower_components/taffy-break/scss/main';
 // @import 'bower_components/taffy-adapt/scss/main';
 // @import 'bower_components/taffy-grid/scss/main';
-
-$grid-fixed: true;
 
 @import 'bower_components/fizz-sass/scss/main';
 @import '../break/scss/main';
@@ -28,6 +28,15 @@ body {
   background-color: $white;
 }
 
-.taffy-item-12 {
-  @include item(1 (6 12))
-}
+.taffy-item-1  { @include item(1) }
+.taffy-item-2  { @include item(1 (2 2)) }
+.taffy-item-3  { @include item(1 (2 2) (3 3)) }
+.taffy-item-4  { @include item(1 (2 2) (3 3) (4 4)) }
+.taffy-item-5  { @include item(1 (2 2) (3 3) (4 4) (5 5)) }
+.taffy-item-6  { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6)) }
+.taffy-item-7  { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7)) }
+.taffy-item-8  { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8)) }
+.taffy-item-9  { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8) (9 9)) }
+.taffy-item-10 { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8) (9 9) (10 10)) }
+.taffy-item-11 { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8) (9 9) (10 10) (11 11)) }
+.taffy-item-12 { @include item(1 (2 2) (3 3) (4 4) (5 5) (6 6) (7 7) (8 8) (9 9) (10 10) (11 11) (12 12)) }
