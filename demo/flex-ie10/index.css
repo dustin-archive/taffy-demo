@@ -1,0 +1,208 @@
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 75em;
+  margin: auto;
+}
+
+.grid> .taffy-item-1,
+.grid> .taffy-item-2,
+.grid> .taffy-item-3,
+.grid> .taffy-item-4,
+.grid> .taffy-item-5,
+.grid> .taffy-item-6,
+.grid> .taffy-item-7,
+.grid> .taffy-item-8,
+.grid> .taffy-item-9,
+.grid> .taffy-item-10,
+.grid> .taffy-item-11,
+.grid> .taffy-item-12 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-preferred-size: calc((100% / 1) - 0.01px);
+  flex-basis: calc((100% / 1) - 0.01px);
+}
+
+@media (min-width: 12.5em) {
+  .grid> .taffy-item-2,
+  .grid> .taffy-item-3,
+  .grid> .taffy-item-4,
+  .grid> .taffy-item-5,
+  .grid> .taffy-item-6,
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 2) - 0.01px);
+    flex-basis: calc((100% / 2) - 0.01px);
+  }
+}
+
+@media (min-width: 18.75em) {
+  .grid> .taffy-item-3,
+  .grid> .taffy-item-4,
+  .grid> .taffy-item-5,
+  .grid> .taffy-item-6,
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 3) - 0.01px);
+    flex-basis: calc((100% / 3) - 0.01px);
+  }
+}
+
+@media (min-width: 25em) {
+  .grid> .taffy-item-4,
+  .grid> .taffy-item-5,
+  .grid> .taffy-item-6,
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 4) - 0.01px);
+    flex-basis: calc((100% / 4) - 0.01px);
+  }
+}
+
+@media (min-width: 31.25em) {
+  .grid> .taffy-item-5,
+  .grid> .taffy-item-6,
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 5) - 0.01px);
+    flex-basis: calc((100% / 5) - 0.01px);
+  }
+}
+
+@media (min-width: 37.5em) {
+  .grid> .taffy-item-6,
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 6) - 0.01px);
+    flex-basis: calc((100% / 6) - 0.01px);
+  }
+}
+
+@media (min-width: 43.75em) {
+  .grid> .taffy-item-7,
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 7) - 0.01px);
+    flex-basis: calc((100% / 7) - 0.01px);
+  }
+}
+
+@media (min-width: 50em) {
+  .grid> .taffy-item-8,
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 8) - 0.01px);
+    flex-basis: calc((100% / 8) - 0.01px);
+  }
+}
+
+@media (min-width: 56.25em) {
+  .grid> .taffy-item-9,
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 9) - 0.01px);
+    flex-basis: calc((100% / 9) - 0.01px);
+  }
+}
+
+@media (min-width: 62.5em) {
+  .grid> .taffy-item-10,
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 10) - 0.01px);
+    flex-basis: calc((100% / 10) - 0.01px);
+  }
+}
+
+@media (min-width: 68.75em) {
+  .grid> .taffy-item-11,
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 11) - 0.01px);
+    flex-basis: calc((100% / 11) - 0.01px);
+  }
+}
+
+@media (min-width: 75em) {
+  .grid> .taffy-item-12 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-preferred-size: calc((100% / 12) - 0.01px);
+    flex-basis: calc((100% / 12) - 0.01px);
+  }
+}
+
+body {
+  background-color: rgba(0, 191, 160, 0.375);
+}
+
+.grid+ .grid {
+  margin-top: 1em;
+}
+
+.pill {
+  min-height: 1em;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
