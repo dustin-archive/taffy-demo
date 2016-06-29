@@ -4,9 +4,13 @@ var gulp = require('gulp')
 var sass = require('gulp-ruby-sass')
 var jade = require('gulp-jade')
 
+var postcss      = require('gulp-postcss')
+var autoprefixer = require('autoprefixer')
+
 gulp.task('sass', function () {
   sass('index.scss')
     .on('error', sass.logError)
+    .pipe(postcss([ autoprefixer ]))
     .pipe(gulp.dest(''))
 })
 
